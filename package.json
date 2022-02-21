@@ -1,0 +1,50 @@
+{
+  "name": "img-Processing-API",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx nodemon src/main.ts",
+    "build": "tsc",
+    "start": "node dist/main.js",
+    "test": "npm run build && jasmine",
+    "lint": "eslint dist/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix"
+  },
+  "keywords": [],
+  "author": "Abdelraman",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "express-rate-limit": "^6.2.1",
+    "fs": "0.0.1-security",
+    "helmet": "^5.0.2",
+    "jasmine": "^4.0.2",
+    "jasmine-spec-reporter": "^7.0.0",
+    "morgan": "^1.10.0",
+    "path": "^0.12.7",
+    "sharp": "^0.30.1",
+    "supertest": "^6.2.2",
+    "ts-node": "^10.5.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/helmet": "^4.0.0",
+    "@types/image-size": "^0.8.0",
+    "@types/jasmine": "^3.10.3",
+    "@types/morgan": "^1.9.3",
+    "@types/node": "^15.12.1",
+    "@types/sharp": "^0.29.5",
+    "@types/supertest": "^2.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jasmine-reporters": "^2.5.0",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.5"
+  }
+}
